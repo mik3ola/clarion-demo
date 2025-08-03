@@ -2,7 +2,7 @@ export class LoginPage {
   constructor(public page) {}
 
   async goto() {
-    await this.page.goto('https://example.com/login');
+    await this.page.goto('https://the-internet.herokuapp.com/login');
   }
 
   async login(username: string, password: string) {
