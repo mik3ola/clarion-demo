@@ -6,8 +6,9 @@ export default defineConfig({
   retries: 1,
   use: {
     headless: true,
-    baseURL: 'https://example.com',
+    baseURL: 'https://the-internet.herokuapp.com',
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure'
+    video: 'retain-on-failure',
+    trace: 'retain-on-failure'
   }
 });
