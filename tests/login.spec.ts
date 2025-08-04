@@ -14,6 +14,6 @@ test('user can log in and then log out (refactored)', async ({ page }) => {
 
   await securePage.logout();
 
-  await expect(page).toHaveURL('https://the-internet.herokuapp/login');
+  await expect(page).toHaveURL('https://the-internet.herokuapp.com/login');
   await expect(page.locator(loginPage.submitBtn)).toBeVisible();
 });
